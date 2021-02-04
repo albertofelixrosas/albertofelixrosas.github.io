@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>El sitio de Alberto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="w3-theme-l5">
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a
+          class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"
+          ><i class="fa fa-home w3-margin-right"></i>Inicio</a
+        >
+
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          ><i class="fa fa-facebook-official"></i></a
+        ><a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          ><i class="fa fa-instagram"></i
+        ></a>
+
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <div class="w3-hide-small"></div>
+      </div>
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large"
+      >
+        <a
+          href="https://www.facebook.com/alberto.felixrosas.3/"
+          class="w3-bar-item w3-button w3-padding-large"
+          >Facebook</a
+        >
+        <a
+          href="https://www.instagram.com/alberto.felix.r/"
+          class="w3-bar-item w3-button w3-padding-large"
+          >Instagram</a
+        >
+        <a
+          href="https://mx.linkedin.com/"
+          class="w3-bar-item w3-button w3-padding-large"
+          >Linked In</a
+        >
+      </div>
+    </div>
+    <header
+      id="myHeader"
+      class="w3-container w3-theme-d2 w3-center"
+      style="padding: 128px 16px"
+    >
+      <h1 class="w3-margin w3-jumbo">Alberto Félix Rosas</h1>
+      <p class="w3-xlarge">Te amo, Visual Studio Code</p>
+    </header>
+    <div class="w3-row-padding w3-center w3-margin-top">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-container" style="min-height: 260px">
+          <h3>Armado de PC</h3>
+          <br />
+          <i
+            class="fa fa-desktop w3-margin-bottom w3-text-theme"
+            style="font-size: 120px"
+          ></i>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-container" style="min-height: 260px">
+          <h3>Desarrollo y diseño web</h3>
+          <br />
+          <i
+            class="fa fa-css3 w3-margin-bottom w3-text-theme"
+            style="font-size: 120px"
+          ></i>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-container" style="min-height: 260px">
+          <h3>Joyería minecraft</h3>
+          <br />
+          <i
+            class="fa fa-diamond w3-margin-bottom w3-text-theme"
+            style="font-size: 120px"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Container -->
+    <div
+      class="w3-container w3-content"
+      style="max-width: 1400px; margin-top: 20px"
+    >
+      <!-- The Grid -->
+      <div class="w3-row">
+        <!-- Left Column -->
+        <div class="w3-col m4">
+          <!-- Profile -->
+          <div class="w3-card w3-margin-right w3-round w3-white">
+            <div class="w3-container">
+              <h4 class="w3-center">My Profile</h4>
+              <p class="w3-center">
+                <img
+                  src="./img/perfil.png"
+                  class="w3-circle"
+                  style="height: 106px; width: 106px"
+                  alt="Avatar"
+                />
+              </p>
+              <hr />
+              <p>
+                <i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i
+                >Ing. en Software
+              </p>
+              <p>
+                <i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i
+                >Sonora, México
+              </p>
+              <p>
+                <i
+                  class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"
+                ></i
+                >May 13, 1999
+              </p>
+            </div>
+            <div class="w3-container">
+              <div class="">
+                <hr />
+                <h4>Sentimental Skills</h4>
+                <p>Cariño</p>
+                <div class="w3-grey">
+                  <div
+                    class="w3-container w3-dark-grey w3-padding w3-center"
+                    style="width: 95%"
+                  >
+                    95%
+                  </div>
+                </div>
+                <p>Comprensión</p>
+                <div class="w3-grey">
+                  <div
+                    class="w3-container w3-dark-grey w3-padding w3-center"
+                    style="width: 75%"
+                  >
+                    75%
+                  </div>
+                </div>
+                <p>Ternura</p>
+                <div class="w3-grey">
+                  <div
+                    class="w3-container w3-dark-grey w3-padding w3-center"
+                    style="width: 80%"
+                  >
+                    80%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- Accordion -->
+
+          <br />
+
+          <!-- Interests -->
+
+          <br />
+
+          <!-- Alert Box -->
+          <div
+            class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small"
+            style="display: none"
+          >
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-theme-l3 w3-display-topright"
+            >
+              <i class="fa fa-remove"></i>
+            </span>
+            <p><strong>Hey!</strong></p>
+            <p>People are looking at your profile. Find out who.</p>
+          </div>
+
+          <div class="w3-col m8">
+            <!-- Profile -->
+
+            <!-- Accordion -->
+
+            <!-- Interests -->
+            <div class="w3-card w3-round w3-white w3-hide-small"></div>
+            <br />
+
+            <!-- Alert Box -->
+            <div
+              class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small"
+              style="display: none"
+            >
+              <span
+                onclick="this.parentElement.style.display='none'"
+                class="w3-button w3-theme-l3 w3-display-topright"
+              >
+                <i class="fa fa-remove"></i>
+              </span>
+              <p><strong>Hey!</strong></p>
+              <p>People are looking at your profile. Find out who.</p>
+            </div>
+
+            <!-- End Left Column -->
+          </div>
+        </div>
+
+        <div class="w3-col m8">
+          <!-- Profile -->
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container">
+              <div class="">
+                <h4><b>Acerca de mi</b></h4>
+                <p>
+                  Soy un estudiante de Ingeniería en Software de la universidad
+                  de ITSON plantel Navojoa Sur. Tengo en el momento que escribo
+                  esta sección 21 años, me gustan los gatos, viajar por
+                  distintos lugares de México, aprender cosas nuevas, jugar
+                  videojuegos, ver películas, programar y codificar con amigos
+                  (especialmente Vanessa) , comer comida deliciosa, hacer
+                  ejercicio a lo masoquista, soy muy dócil, paciente, aunque muy
+                  despistado y a veces tengo falta de carácter pero estoy
+                  trabajando en mejorar ciertos aspectos de mi personalidad.
+                  Entre mis planes esta luchar contra el hambre y la pobreza de
+                  las personas, la corrupción del gobierno de mi país, invertir
+                  en BitCoin, aprender a escribir poesía como nuestro amado
+                  señor Jesucristo manda y siempre permanecer firme para no
+                  morir de rodillas ante la injusticia que se presenta en el
+                  mundo.
+                </p>
+                <hr />
+
+                <!-- Pricing Tables -->
+              </div>
+
+              <p>
+                Padre nuestro que estas en el cielo, santificado sea tu nombre,
+                venga nosotros tu reino, hágase su voluntad en la tierra como en
+                el cielo, danos hoy nuestro pan de cada día, perdona nuestras
+                ofensas como también nosotros perdonamos a los que nos ofenden,
+                no nos dejes caer en la tentación, líbranos del mal, Amén.
+              </p>
+              <div class="w3-row-padding" style="margin: 0 -16px">
+                <div class="w3-half">
+                  <img
+                    src="./img/biblia.jpg"
+                    style="width: 100%"
+                    alt="Biblia"
+                    class="w3-margin-bottom"
+                  />
+                </div>
+                <div class="w3-half">
+                  <img
+                    src="./img/jesus.jpg"
+                    style="width: 100%"
+                    alt="Jesus"
+                    class="w3-margin-bottom"
+                  />
+                </div>
+              </div>
+
+              <p>Interests</p>
+
+              <p>
+                <span class="w3-tag w3-small w3-theme-d5">News</span>
+                <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+                <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+                <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                <span class="w3-tag w3-small w3-theme">Games</span>
+                <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+                <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion -->
+
+          <!-- Interests -->
+          <div class="w3-card w3-round w3-white w3-hide-small"></div>
+          <br />
+
+          <!-- Alert Box -->
+          <div
+            class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small"
+            style="display: none"
+          >
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="w3-button w3-theme-l3 w3-display-topright"
+            >
+              <i class="fa fa-remove"></i>
+            </span>
+            <p><strong>Hey!</strong></p>
+            <p>People are looking at your profile. Find out who.</p>
+          </div>
+
+          <!-- End Left Column -->
+        </div>
+        <!-- Middle Column -->
+
+        <!-- Right Column -->
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+    <br />
+
+    <div class="w3-container w3-theme-d3 w3-padding-16">
+      <div style="position: relative" class="w3-tooltip w3-right">
+        <span class="w3-text w3-theme-light w3-padding">Go To Top</span>&nbsp;
+        <a class="w3-text-white" href="#myHeader"
+          ><span class="w3-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d3 w3-padding-16">
+      <div class="w3-third">
+        <p>
+          ¿Qué es poesía?, dices mientras clavas en mi pupila tu pupila azul.
+          ¿Qué es poesía? ¿Y tú me lo preguntas? Poesía… eres tú.
+        </p>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">
+            <img
+              src="./img/javascript.svg"
+              class="w3-left w3-margin-right"
+              style="width: 50px"
+            />
+            <span class="w3-large">JavaScript</span><br />
+            <span>Lenguaje idonio para el desarrollo web</span>
+          </li>
+          <li class="w3-padding-16">
+            <img
+              src="./img/github.png"
+              class="w3-left w3-margin-right"
+              style="width: 50px"
+            />
+            <span class="w3-large">OnlyFans de Programadores (GitHub)</span
+            ><br />
+            <span
+              >Aquí seguro que puedes consultar para tus tareas y proyectos
+              personales</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >New York</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Dinner</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Salmon</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >France</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Drinks</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Ideas</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Flavors</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Cuisine</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Chicken</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Dressing</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Fried</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Fish</span
+          >
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"
+            >Duck</span
+          >
+        </p>
+      </div>
+    </footer>
+
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+      <div class="w3-xlarge w3-padding-32">
+        <a href="https://www.facebook.com/alberto.felixrosas.3/">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        </a>
+
+        <a href="https://www.instagram.com/alberto.felix.r/"
+          ><i class="fa fa-instagram w3-hover-opacity"></i
+        ></a>
+
+        <a href="https://mx.linkedin.com/"
+          ><i class="fa fa-linkedin w3-hover-opacity"></i
+        ></a>
+      </div>
+      <p>Powered by Vanessa Rodriguez</p>
+    </footer>
+
+    <script>
+      // Accordion
+      function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className += " w3-theme-d1";
+        } else {
+          x.className = x.className.replace("w3-show", "");
+          x.previousElementSibling.className = x.previousElementSibling.className.replace(
+            " w3-theme-d1",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
